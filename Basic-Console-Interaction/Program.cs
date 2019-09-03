@@ -11,11 +11,12 @@ namespace Basic_Console_Interaction
         static void Main(string[] args)
         {
             Boolean isRunning = true;
-            Boolean userConfirm = false;
-            string input = "";
 
             while(isRunning)
             {
+                Boolean userConfirm = false;
+                string input = "";
+
                 Console.WriteLine("Enter first integer: ");
                 int num1 = Int32.Parse(Console.ReadLine());
                 Console.WriteLine("Enter second integer: ");
