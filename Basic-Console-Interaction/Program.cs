@@ -17,10 +17,34 @@ namespace Basic_Console_Interaction
                 Boolean userConfirm = false;
                 string input = "";
 
+                string[] lines = { "***********      ***         *           *",
+                                   "*         *     *   *       ***         * *",
+                                   "*         *    *     *     *****       *   *",
+                                   "*         *    *     *       *        *     *",
+                                   "*         *    *     *       *         *   *",
+                                   "*         *     *   *        *          * *",
+                                   "***********       *          *           *" };
+
+                foreach (string line in lines) 
+                    Console.WriteLine(line);
+
                 Console.WriteLine("Enter first integer: ");
                 int num1 = Int32.Parse(Console.ReadLine());
                 Console.WriteLine("Enter second integer: ");
                 int num2 = Int32.Parse(Console.ReadLine());
+
+                if (num1 > num2)
+                {
+                    Console.WriteLine(num1 + " is larger than " + num2);
+                }
+                else if (num2 > num1)
+                {
+                    Console.WriteLine(num2 + " is larger than " + num1);
+                }
+                else
+                {
+                    Console.WriteLine(num1 + " is equal to " + num2);
+                }
 
                 int sum = num1 + num2;
                 int product = num1 * num2;
